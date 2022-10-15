@@ -1,11 +1,12 @@
 # Devops_Docker_lab_01
 To setup the lab, as participants, we would install Docker Toolbox and create Containers for each application being used to setup learning environment.
 
-## Uninstall old versions
-```sudo apt-get remove docker docker-engine docker.io containerd runc
+### Uninstall Old Versions
 ```
-### install docker on ubuntu 20.04LTS
-#### digital ocean totorail to install docker
+sudo apt-get remove docker docker-engine docker.io containerd runc
+```
+### Install Docker On Ubuntu
+#### _digital ocean totorail to install docker_
 ```
 sudo apt update
 sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
@@ -14,7 +15,7 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 apt-cache policy docker-ce
 sudo apt install docker-ce -y
 ```
-## docker-offical-waay to install docker
+### _Docker Offical-doc To Install_
 ```
 sudo apt-get install \
     ca-certificates \
@@ -55,6 +56,7 @@ A Container Image is a lightweight, standalone, executable package of software t
 ### PULLING IMAGES
 ```
 docker image pull alpine:latest
+docker pull asadzoot/helloworld
 ```
 ```
 docker ls
@@ -64,39 +66,32 @@ docker image rm alpine:latest
 ```
 ## DOCKER CONTAINERS
 ````
-docker run -it aamirpinger/helloworld sh
+docker run -it asadzoot/helloworld sh
 ````
 ````
 # exit
 ````
 ````
 docker container ls
-````
-````
 docker ps
-````
-````
-docker exec -it festive_noether sh
-````
-````
-docker container stop festive_noether 
-````
-````
 docker container ls -a
 ````
 ````
-docker container start festive_noether 
+docker exec -it asadzoot/helloworld
 ````
 ````
-docker container rm festive_noether
+docker container start asadzoot/helloworld
+docker container stop asadzoot/helloworld 
+docker container rm asadzoot/helloworld
 ````
 ````
-docker run -d --name mycontainer aamirpinger/helloworld
+docker run -d --name mycontainer asadzoot/helloworld
 ````
 ````
-docker run -d --name mycontainer -p 8000:80 aamirpinger/helloworld
+docker run -d --name mycontainer -p 8000:80 asadzoot/helloworld
 ````
 
+https://hub.docker.com/r/asadzoot/helloworld
 
-
+https://hub.docker.com/u/asadzoot
 
