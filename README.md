@@ -1,14 +1,14 @@
 <h1 align="center">Hi 👋, I'm SYED ASAD RAZA</h1>
 <h3 align="center">A passionate DevOps Instructor | Microsoft Certified Trainer | Cloud & DevOps Engineer at Ascend healthcare | 云工程师 | Microsoft Azure Cloud Engineer | ExAzure Administrator at Sysytems Limited </h3>
 
-## Devops_Docker_lab_Scratch for Beginner
+## 🐋Devops_Docker_lab_Scratch for Beginner
 To setup the lab, as participants, we would install Docker Toolbox and create Containers for each application being used to setup learning environment.
 
-### Uninstall Old Versions
+### 🐞Uninstall Old Versions
 ```
 sudo apt-get remove docker docker-engine docker.io containerd runc
 ```
-### Install Docker On Ubuntu
+### 🌱Install Docker On Ubuntu
 #### _digital ocean totorail to install docker_
 ```
 sudo apt update
@@ -48,7 +48,7 @@ docker version
 
 ![Docker Engine](https://user-images.githubusercontent.com/71556060/196001769-03af9e4c-0afe-4711-a2e3-5db1c129227d.png)
 
-## IMAGES
+## 🌈IMAGES
 
 A Container Image is a lightweight, standalone, executable package of software that includes everything needed to run an application: 
   - Code
